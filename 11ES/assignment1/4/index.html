@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+</body></html>
+<script type="text/javascript">
+    let names = ['tom', 'jerry', 'karthik'];
+    class ka {
+        constructor(name, len) {
+            this.name = name
+            this.len = len
+        }
+    }
+
+    var result = [];
+
+    function stringconvertor(names) {
+        var o;
+        var i=0;
+        while(i<names.length)
+            {
+                result[i]=new ka(names[i],names[i].length);
+                i=i+1;
+            }
+    }
+    stringconvertor(names);
+    console.log(result);
+
+</script>
