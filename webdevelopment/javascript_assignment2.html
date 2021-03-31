@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment functions</title>
+    <script type="text/javascript">
+    function add(a,b)
+        {
+            return a+b;
+        }
+        function square(a)
+        {
+
+        return a*a;
+        }
+        var ans=square(add(1,2));
+        document.write("<p>First elements are add and the it is square numbers are aquare(add(1,2)="+ans+"</p>");
+        
+        
+   /*     
+     2Q   */
+      
+        
+    function f1(a)
+        {
+            return a*a;
+        }
+    function f2(a)
+        {
+            return a*2;
+        }
+    
+    function composite(b)
+        {
+            return f2(f1(b));
+        }
+        
+        document.write("<p> 2nd question in the basic programming="+composite(5)+"</p>");
+                
+    
+        
+        
+        
+ 
+ 
+ /*  3Q*/
+        function iseven(a)
+        {
+        if(a%2==0)
+        {
+            return true;
+        }
+          else
+              {
+                  
+                  return false;
+              }
+            
+        
+        }
+        function find(arr,fun)
+        {  var i=0;
+            while(i<arr.length)
+                {
+                    if(fun(arr[i]))
+                        {
+                            return arr[i];
+                        }
+                    i=i+1;
+                }
+            return "no even number in the list";
+        }
+      document.write("<p>the first even number in the array is [1,2,3] is "+find([1,2,3],iseven)+ "</p>");
+    
+    
+    
+    
+    /*  4Q*/
+        function isquare(a)
+        {
+        return a*a;
+        
+        }
+        function map(arr,fun)
+        {  var i=0;
+            while(i<arr.length)
+                {
+                    arr[i]=isquare(arr[i]);
+                    i=i+1;
+                }
+         return arr;
+        }
+      document.write("<p>the the map of the  the array is map([1,2,3],square) is "+map([1,2,3],isquare)+ "</p>");
+        
+        
+        
+        /*
+        
+        
+        
+        advance
+        
+        
+        
+        */
+            
+            
+    
+        
+        
+     
+        
+        
+        
+        
+          /*advance 3q*/
+        
+        
+        function square(a)
+        {
+            return a*a;
+        }
+        document.write("<p> string of function is "+square+"</p>");
+    
+    
+    
+    
+    </script>
+    
+    </head>
+<body>
+
+    </body>
+
+</html>

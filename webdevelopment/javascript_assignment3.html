@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+   
+    
+    </head>
+<body>
+
+    </body>
+
+</html>
+ <script type="text/javascript">
+       /* 
+        1q*/
+      class rectangle
+          {
+              
+              constructor(l,b)
+              {
+                  this.l=l;
+                  this.b=b;
+              }
+            /*2Q*/
+             area()
+              {
+                  
+                  return this.l*this.b;
+              }
+             
+              
+          }
+        var r=new rectangle(10,20);
+        document.write("<p> the legth and breath of the first rectangle"+r.l+" "+r.b+" </p>");
+      
+    /*    
+     
+     3q
+      */
+     
+        var y=new rectangle(20,20);
+        document.write("<p> the legth and breath of the first rectangle"+y.l+" "+y.b+" </p>");
+     document.write("<p> the legth and breath of the first rectangle"+y.area()+" </p>");
+   
+   
+   
+     /*
+     
+     4Q
+     
+     
+     */
+     var person=
+         {
+          
+        firstName:"siva",
+        lastName:"karthik"
+         
+         
+         }
+     
+     
+     person.lastName="rangisetti";
+     document.write("<p>"+person.lastName+"</p>");
+      
+    /* 5Q*/
+     person.middleName="sai";
+     document.write("<p>"+person.middleName+"</p>");
+     
+     
+     
+   
+   
+   
+   /*
+    
+     7Q
+     
+     
+     */
+   
+    
+     function person(fname,lname,age,skills,dateofbirth,address,married,profession) 
+    { 
+    this.fname=fname;     
+    this.lname=lname;     
+    this.age=age; 
+    this.skills=skills; 
+    this.dateofbirth=dateofbirth;   
+    this.address=address;      
+    this.married=married; 
+    this.profession=profession; 
+     
+    } 
+
+     var p1=new person("nikhil","goud",22,["c"],"24/10/1996",{city:"hyderabad",pincode:"521185"},"false","sr analyst") ;
+     var p2=new 
+person("harish","chinna",21,"HTML","08/06/1997",{city:"Ameerpet",pincode:"500038"},"false","jr analyst") 
+ 
+
+     
+     
+     
+     console.log(p1);
+     
+     console.log(p2);
+   
+   
+   
+   
+   
+     /*
+     
+     <
+         
+    7b
+     
+     */
+     
+    var amithab=new person("amithab","bachan",22,["c"],"24/10/1996",{city:"hyderabad",pincode:"521185"},"false","sr analyst") 
+ 	var abhisheik=new person("abhisheik",21,"HTML","08/06/1997","false","jr analyst")  ;
+    var abhisheik=Object.create(amithab);
+      abhisheik=new person("abhisheik",21,"HTML","08/06/1997","false","jr analyst")  ;
+ 	print=function() 
+ 	{ 
+ 	    console.log(amithab);  	   
+        console.log(abhisheik.fname); 
+ 	    console.log(abhisheik.address); 
+ 	}(); 
+
+   
+        
+     /*
+     
+     
+     7c
+     
+     
+     */
+     
+       var aradhya=new person("aradhya",amithab.lname,21,"HTML","08/06/1997",amithab.address,"false",amithab.profession)  ;
+    console.log(aradhya);
+     
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+        
+    </script>
